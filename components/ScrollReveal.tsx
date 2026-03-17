@@ -17,27 +17,27 @@ export default function ScrollReveal({
   width = '100%',
   delay = 0,
   direction = 'up',
-  duration = 0.7,
+  duration = 0.5,
   className = '',
 }: ScrollRevealProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-80px' });
+  const isInView = useInView(ref, { once: true, margin: '-50px' });
   const controls = useAnimation();
 
   const getInitialPosition = () => {
     switch (direction) {
       case 'up':
-        return { y: 60, x: 0 };
+        return { y: 30, x: 0 };
       case 'down':
-        return { y: -60, x: 0 };
+        return { y: -30, x: 0 };
       case 'left':
-        return { y: 0, x: 60 };
+        return { y: 0, x: 30 };
       case 'right':
-        return { y: 0, x: -60 };
+        return { y: 0, x: -30 };
       case 'none':
         return { y: 0, x: 0 };
       default:
-        return { y: 60, x: 0 };
+        return { y: 30, x: 0 };
     }
   };
 
@@ -53,7 +53,7 @@ export default function ScrollReveal({
       transition: {
         duration,
         delay,
-        ease: [0.22, 1, 0.36, 1], // Custom easing for editorial feel
+        ease: [0.25, 0.4, 0.25, 1],
       },
     },
   };

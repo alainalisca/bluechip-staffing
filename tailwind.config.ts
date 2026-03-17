@@ -9,58 +9,51 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Refined navy palette
+        // Blue Chip Navy palette (from logo)
         navy: {
-          50: '#f7f8f9',
-          100: '#ebeef1',
-          200: '#d4dbe3',
-          300: '#b0bcc9',
-          400: '#8597ab',
-          500: '#667a90',
-          600: '#516277',
-          700: '#435061',
-          800: '#3a4452',
-          900: '#1a1f26',
-          950: '#0d1015',
+          50: '#f0f4f8',
+          100: '#d9e2ec',
+          200: '#bcccdc',
+          300: '#9fb3c8',
+          400: '#829ab1',
+          500: '#627d98',
+          600: '#486581',
+          700: '#334e68',
+          800: '#243b53',
+          900: '#102a43',
+          950: '#0a1628',
         },
-        // Warm accent (sophisticated gold/bronze)
+        // Accent blue (from logo)
         accent: {
-          50: '#fdf8f3',
-          100: '#f9edd9',
-          200: '#f3d9b3',
-          300: '#e9be82',
-          400: '#de9d4f',
-          500: '#d4832e',
-          600: '#c56a23',
-          700: '#a4511f',
-          800: '#844220',
-          900: '#6b371d',
+          50: '#e6f6ff',
+          100: '#bae3ff',
+          200: '#7cc4fa',
+          300: '#47a3f3',
+          400: '#2186eb',
+          500: '#0967d2',
+          600: '#0552b5',
+          700: '#03449e',
+          800: '#01337d',
+          900: '#002159',
         },
-        // Clean cream for backgrounds
-        cream: {
-          50: '#fefdfb',
-          100: '#faf8f3',
-          200: '#f5f0e6',
+        // Warm highlight for CTAs
+        gold: {
+          400: '#f0b429',
+          500: '#de911d',
+          600: '#cb6e17',
         },
       },
       fontFamily: {
-        // Editorial serif for headlines
-        display: ['Playfair Display', 'Georgia', 'serif'],
-        // Clean sans for body
-        sans: ['DM Sans', 'system-ui', 'sans-serif'],
-      },
-      fontSize: {
-        // Editorial scale
-        'display-xl': ['5.5rem', { lineHeight: '1', letterSpacing: '-0.02em' }],
-        'display-lg': ['4rem', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
-        'display-md': ['3rem', { lineHeight: '1.1', letterSpacing: '-0.01em' }],
-        'display-sm': ['2rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }],
+        // Clean modern sans (Hunt Club style)
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        // Display font for headlines
+        display: ['Inter', 'system-ui', 'sans-serif'],
       },
       animation: {
-        'fade-in': 'fadeIn 0.8s ease-out',
-        'slide-up': 'slideUp 0.8s ease-out',
-        'slide-in-left': 'slideInLeft 0.6s ease-out',
-        'slide-in-right': 'slideInRight 0.6s ease-out',
+        'fade-in': 'fadeIn 0.6s ease-out',
+        'slide-up': 'slideUp 0.6s ease-out',
+        'slide-in-left': 'slideInLeft 0.5s ease-out',
+        'slide-in-right': 'slideInRight 0.5s ease-out',
       },
       keyframes: {
         fadeIn: {
@@ -68,15 +61,15 @@ const config: Config = {
           '100%': { opacity: '1' },
         },
         slideUp: {
-          '0%': { opacity: '0', transform: 'translateY(40px)' },
+          '0%': { opacity: '0', transform: 'translateY(30px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         slideInLeft: {
-          '0%': { opacity: '0', transform: 'translateX(-40px)' },
+          '0%': { opacity: '0', transform: 'translateX(-30px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
         slideInRight: {
-          '0%': { opacity: '0', transform: 'translateX(40px)' },
+          '0%': { opacity: '0', transform: 'translateX(30px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
       },
